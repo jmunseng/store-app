@@ -17,7 +17,6 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </Container>
-        <p>used TypeScript, React Bootstrap, Bootstrap, Router </p>
       </ShoppingCartProvider>
     </>
   );
