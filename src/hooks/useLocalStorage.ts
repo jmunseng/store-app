@@ -11,7 +11,7 @@ const useLocalStorage = <T>(key: string, initialvalue: T | (() => T)) => {
     if (jsonValue != null) return JSON.parse(jsonValue);
 
     if (typeof initialvalue === 'function') {
-      return (initialvalue as () => T)();
+      return initialvalue as () => T;
     } else {
       initialvalue;
     }
